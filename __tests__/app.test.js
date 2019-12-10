@@ -24,6 +24,18 @@ describe('app routes', () => {
       .post('/api/v1/recipes')
       .send({
         name: 'cookies',
+        ingredients: [
+          {
+            name: 'butter',
+            amount: 4,
+            measurement: 'pounds'
+          },
+          {
+            name: 'sugar',
+            amount: 10,
+            measurement: 'ounces'
+          }
+        ],
         directions: [
           'preheat oven to 375',
           'mix ingredients',
@@ -35,6 +47,20 @@ describe('app routes', () => {
         expect(res.body).toEqual({
           _id: expect.any(String),
           name: 'cookies',
+          ingredients: [
+            {
+              _id: expect.any(String),
+              name: 'butter',
+              amount: 4,
+              measurement: 'pounds'
+            },
+            {
+              _id: expect.any(String),
+              name: 'sugar',
+              amount: 10,
+              measurement: 'ounces'
+            }
+          ],
           directions: [
             'preheat oven to 375',
             'mix ingredients',
@@ -68,6 +94,18 @@ describe('app routes', () => {
   it('gets a recipe by id', async() => {
     const recipe = await Recipe.create({
       name: 'cookies',
+      ingredients: [
+        {
+          name: 'butter',
+          amount: 4,
+          measurement: 'pounds'
+        },
+        {
+          name: 'sugar',
+          amount: 10,
+          measurement: 'ounces'
+        }
+      ],
       directions: [
         'preheat oven to 375',
         'mix ingredients',
@@ -82,6 +120,20 @@ describe('app routes', () => {
         expect(recipe.body).toEqual({
           _id: expect.any(String),
           name: 'cookies',
+          ingredients: [
+            {
+              _id: expect.any(String),
+              name: 'butter',
+              amount: 4,
+              measurement: 'pounds'
+            },
+            {
+              _id: expect.any(String),
+              name: 'sugar',
+              amount: 10,
+              measurement: 'ounces'
+            }
+          ],
           directions: [
             'preheat oven to 375',
             'mix ingredients',
@@ -96,6 +148,18 @@ describe('app routes', () => {
   it('updates a recipe by id', async() => {
     const recipe = await Recipe.create({
       name: 'cookies',
+      ingredients: [
+        {
+          name: 'butter',
+          amount: 4,
+          measurement: 'pounds'
+        },
+        {
+          name: 'sugar',
+          amount: 10,
+          measurement: 'ounces'
+        }
+      ],
       directions: [
         'preheat oven to 375',
         'mix ingredients',
@@ -111,6 +175,20 @@ describe('app routes', () => {
         expect(res.body).toEqual({
           _id: expect.any(String),
           name: 'good cookies',
+          ingredients: [
+            {
+              _id: expect.any(String),
+              name: 'butter',
+              amount: 4,
+              measurement: 'pounds'
+            },
+            {
+              _id: expect.any(String),
+              name: 'sugar',
+              amount: 10,
+              measurement: 'ounces'
+            }
+          ],
           directions: [
             'preheat oven to 375',
             'mix ingredients',
@@ -125,6 +203,18 @@ describe('app routes', () => {
   it('deletes a recipe by id', async() => {
     const recipe = await Recipe.create({
       name: 'cookies',
+      ingredients: [
+        {
+          name: 'butter',
+          amount: 4,
+          measurement: 'pounds'
+        },
+        {
+          name: 'sugar',
+          amount: 10,
+          measurement: 'ounces'
+        }
+      ],
       directions: [
         'preheat oven to 375',
         'mix ingredients',
@@ -139,6 +229,20 @@ describe('app routes', () => {
         expect(deletedRecipe.body).toEqual({
           _id: expect.any(String),
           name: 'cookies',
+          ingredients: [
+            {
+              _id: expect.any(String),
+              name: 'butter',
+              amount: 4,
+              measurement: 'pounds'
+            },
+            {
+              _id: expect.any(String),
+              name: 'sugar',
+              amount: 10,
+              measurement: 'ounces'
+            }
+          ],
           directions: [
             'preheat oven to 375',
             'mix ingredients',
