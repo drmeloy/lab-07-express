@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576009771191" clover="3.2.0">
-  <project timestamp="1576009771191" name="All files">
-    <metrics statements="35" coveredstatements="32" conditionals="1" coveredconditionals="1" methods="14" coveredmethods="11" elements="50" coveredelements="44" complexity="0" loc="35" ncloc="35" packages="3" files="3" classes="3"/>
+<coverage generated="1576009970933" clover="3.2.0">
+  <project timestamp="1576009970933" name="All files">
+    <metrics statements="35" coveredstatements="34" conditionals="1" coveredconditionals="1" methods="14" coveredmethods="13" elements="50" coveredelements="48" complexity="0" loc="35" ncloc="35" packages="3" files="3" classes="3"/>
     <package name="lib">
-      <metrics statements="20" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="8"/>
+      <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
       <file name="app.js" path="C:\Users\Dan\Documents\alchemy\career-track\labs\lab-07-express\lib\app.js">
-        <metrics statements="20" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="8"/>
+        <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -23,8 +23,8 @@
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
         <line num="38" count="1" type="stmt"/>
       </file>
     </package>
